@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test task JavaScript advanced</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/custom.css">
+    
+</head>
+<body>
+<div id="the-box">The box</div>
+<div class="app-container pt-40">
+    <div class="top-cart">
+        <div class="top-cart-info">
+            <div class="container top-cart-info-container">
+                <span class="top-cart-info__item">
+                     Товаров в корзине - <span class="red-info">XXX</span>,
+                      на сумму <span class="red-info">XXX</span> грн</span>
+                <button class="btn-check">Оформить заказ</button>
+            </div>
+        </div><!-- /.top-cart-info -->
+
+    </div><!-- /.top-cart -->
+
+
+
+    <header class="top-header">
+        <div class="container">
+            <h1>Welcome to our site</h1>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <section class="container">
+            <div class="filter-box">
+                <div class="select-box">
+                    <label for="filter-categories" class="filter-label">Категория</label>
+                    <select id="filter-categories" data-type="category" class="select-control">
+                        <option value="0">Все</option>
+                        <option value="1">Завтраки</option>
+                        <option value="2">Первые блюда</option>
+                        <option value="3">Гарниры</option>
+                    </select>
+                </div><!-- /.select-box -->
+                <div class="price-select-box">
+                    <label for="filter-price" class="filter-label">Цена</label>
+                    <select id="filter-price" data-type="price" class="select-control">
+                        <option value="0">Все</option>
+                        <option value="30">До 30 грн</option>
+                        <option value="50">До 50 грн</option>
+                        <option value="100">До 100 грн</option>
+                        <option value="150">До 150 грн</option>
+                    </select>
+                </div><!-- /.price-select-box -->
+            </div><!-- /filter-box-->
+
+
+
+            <div class="products-box grid-box">
+
+                <div id="product-00" data-category="1" data-price="25" class="product-box__item">
+                    <h3 class="product-box__title">Овсяная каша с фруктами</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im1.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>25 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-01" data-category="3" data-price="25" class="product-box__item">
+                    <h3 class="product-box__title">Яичница глазунья с овощами на сковородке</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im2.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>25 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-02" data-category="1" data-price="30" class="product-box__item">
+                    <h3 class="product-box__title">Сет азербайджанский завтрак</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im3.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>30 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-03" data-category="1" data-price="45" class="product-box__item">
+                    <h3 class="product-box__title">Яичница с помидорами по-бакински</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im4.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>45 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-04" data-category="1" data-price="45" class="product-box__item">
+                    <h3 class="product-box__title">Сырники со сметаной</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im5.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>45 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-05" data-category="2" data-price="50" class="product-box__item">
+                    <h3 class="product-box__title">Шпинатный крем-суп</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im6.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>50 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-06" data-category="2" data-price="85" class="product-box__item">
+                    <h3 class="product-box__title">Суп Пити</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im7.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>85 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-07" data-category="2" data-price="95" class="product-box__item">
+                    <h3 class="product-box__title">Борщ украинский</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im8.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>95 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-08" data-category="2" data-price="100" class="product-box__item">
+                    <h3 class="product-box__title">Суп Кюфта Бозбаш</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im9.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>100 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-09" data-category="3" data-price="125" class="product-box__item">
+                    <h3 class="product-box__title">Картофель фри</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im10.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>125 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-10" data-category="3" data-price="135" class="product-box__item">
+                    <h3 class="product-box__title">Картофель по-домашнему</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im11.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>135 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                <div id="product-11" data-category="3" data-price="150" class="product-box__item">
+                    <h3 class="product-box__title">Рис с овощами</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="images/im12.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>150 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" min="1" value="1" /> Кол
+                        </div>
+                        <button class="product-box__btn">Добавить</button>
+
+                    </div>
+                </div>
+                
+            </div><!-- /product-box-->
+
+        </section>
+    </div>
+
+    <footer class="bottom-footer bg-beetroot py-1">
+        <div class="container">
+            <div class="footer-row">
+                <div class="col-md-3">Beetroot &copy;2018</div>
+                <div class="col-md-4 text-left">
+                    <a target="_blank" href="https://academy.beetroot.se/?">Bettroot academy  2018</a>
+                </div>
+                <div class="col-md-5 text-right">
+                    <strong>Created by:</strong> <a target="_blank" href="mailto:daria1992moskalets@gmail.com"> Daria Moskalets</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="cart-modal__wrap">
+       <div class="cart-modal__overlay"></div>
+       <div class="cart-modal__close"></div>
+        <div class="cart-modal">
+            <form id="cart-modal-form" action="" method="post">
+                <label for="name" class="form-label">
+                    <input type="text" id="name" class="form-input text" placeholder="Имя *"  />
+                    <i class="error-msg">* Это поле обязательное для заполнения. <br /> Имя не должно начинаться с
+                        пробела или содержать только пробелы.</i>
+                </label>
+                <label for="email" class="form-label">
+                    <input type="email" id="email" class="form-input mail" placeholder="Email *"  />
+                    <i class="error-msg">* Это поле обязательное для заполнения.</i>
+                </label>
+                <button type="submit">Отправить</button>
+            </form>
+        </div><!-- /.cart-modal -->
+    </div><!-- /.cart-modal-wrap -->
+    
+</div><!-- /.app-container -->
+
+<!-- Main Scripts -->
+<script async defer src="js/script.js"></script>
+
+</body>
+</html>

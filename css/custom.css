@@ -1,0 +1,107 @@
+.product-box__btn:hover, .product-box__btn:focus,
+.btn-check:hover,
+.btn-check:focus {
+  cursor: pointer; }
+
+.product-box__item.filtering {
+  display: block; }
+
+.cart-modal {
+  max-width: 480px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 102;
+  display: block;
+  padding: 25px; }
+  .cart-modal__wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: none; }
+  .cart-modal__overlay {
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    display: block; }
+  .cart-modal__close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 102;
+    display: block;
+    transform: rotate(45deg);
+    width: 24px;
+    height: 24px; }
+    .cart-modal__close:before, .cart-modal__close:after {
+      content: '';
+      width: 24px;
+      height: 3px;
+      background: #ffffff;
+      display: block;
+      position: absolute;
+      top: 10px; }
+    .cart-modal__close:after {
+      transform: rotate(90deg); }
+    .cart-modal__close:hover, .cart-modal__close:focus {
+      cursor: pointer; }
+
+#cart-modal-form .form-label {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-bottom: 15px; }
+#cart-modal-form .form-input {
+  background: #e3e3e3;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  min-height: 40px;
+  padding: 5px 20px;
+  color: #040211;
+  display: block;
+  font-size: 15px;
+  line-height: 1.2; }
+  #cart-modal-form .form-input::placeholder {
+    color: rgba(4, 2, 17, 0.4); }
+#cart-modal-form .error-msg {
+  font-size: 10px;
+  color: #c96584;
+  padding-top: 3px;
+  display: none; }
+#cart-modal-form [type="submit"] {
+  min-height: 40px;
+  border-radius: 10px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 1.2;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  margin: 0 auto;
+  color: #ffffff;
+  background: #218554; }
+  #cart-modal-form [type="submit"]:hover, #cart-modal-form [type="submit"]:focus {
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(33, 133, 84, 0.6); }
+
+/*# sourceMappingURL=custom.css.map */
